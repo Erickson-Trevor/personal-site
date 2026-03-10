@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trevor | Software Developer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-</head>
-<body>
-    <header>
-        <h1>Trevor's Portfolio</h1>
-        <nav>
-            <a href="/">Home</a> / 
-            <a href="https://github.com/Erickson-Trevor">GitHub</a>
-        </nav>
-    </header>
-    <blockquote>
-        Senior Software Development Student | Seeking 2026 Opportunities
-    </blockquote>
-    <h2>The Tech Stack</h2>
-    <ul>
-        <li><strong>Backend:</strong> Python / Flask / SQLAlchemy</li>
-        <li><strong>Tooling:</strong> UV / Gunicorn / Git</li>
-        <li><strong>Interests:</strong> Physics Engines & Simulations</li>
-    </ul>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Home | Trevor{% endblock %}
+
+{% block content %}
+    <h1>Welcome to my Developer Journey</h1>
+    <p>This site serves as a live portfolio for my senior year software projects.</p>
+    
+    <section>
+        <h2>Featured Projects</h2>
+        <p>Simulation and algorithm work will appear here.</p>
+    </section>
+{% endblock %}
